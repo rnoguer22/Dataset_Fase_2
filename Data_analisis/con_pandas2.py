@@ -17,3 +17,15 @@ wineqt_link = pd.read_csv(r"https://github.com/rnoguer22/Dataset_Fase_2/blob/mai
 archivo.to_csv("WineQT.csv", mode="a") #Ponemos el mode a para que añada al csv y no reemplace los datos que hay ya escritos
 
 
+#Indexación, selección y asignación
+#Selección de una columna:
+wine = pd.read_csv("WineQT.csv")
+columna_elegida = wine["density"]
+print(columna_elegida)
+
+#Selección de varias columnas:
+columnas_elegidas = wine[["chlorides", "density", "pH"]]
+print(columnas_elegidas)
+
+
+
