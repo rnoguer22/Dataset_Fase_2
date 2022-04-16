@@ -17,3 +17,9 @@ En general, las empresas realizan análisis de datos para ganar un mayor conocim
 El modelo de análisis se complementa de cuatro elementos fundamentales. Estos elementos sirven para clasificar principalmente los diferentes diagramas y otros derivados conocidos en plataformas como sistemas de información e ingeniería de software entre otros. Además estos con clasificados en elementos de escenario, elementos de flujo, elementos de clases y elementos de comportamiento. Para explicarlos sencillamente, son los distintos tipos de UML que reflejan como funciona nuestro programa o algoritmo.
 
 En el lenguaje que nos ocupa actualmente, Python, los datos se analizan mediante Pandas, la librería que se usa para el análisis y tratamiento de datos. Nos proporciona la clase Dataframe, la cual permite almacenar los datos en un objeto similar a una tabla de una base de datos.
+
+
+MODELO DE PÁGINA Y APP:
+![esquema Vinho](https://user-images.githubusercontent.com/91722847/163686507-739bafc0-7552-4e20-ad1c-12604ca99fad.png)
+
+![clases vinho](https://user-images.githubusercontent.com/91722847/163686509-d7b83472-a2a8-4c3e-b96f-dd7b0fedcbc5.png)
