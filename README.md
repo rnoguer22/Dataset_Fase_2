@@ -1,5 +1,7 @@
 # Dataset_Fase_2
 
+El link del repositorio es el siguiente: https://github.com/rnoguer22/Dataset_Fase_2.git
+
 Pincha [aquí](https://www.kaggle.com/datasets/yasserh/wine-quality-dataset?resource=download) para acceder al link del dataset
 
 __________________________________________________________________________________________________________________________________________________________________________
@@ -8,7 +10,7 @@ PARTE 1: COMO FUNCIONAN LOS MODELOS
 
 Para un mayor entendimiento de esta fase del trabajo, consideramos que es importante explicar qué es un modelo de análisis de datos y su importancia.
 
-Para definir qué es un modelo de análisis, se podría decir que es la primera representación técnica de un sistema. Utiliza una mezcla de formatos en texto y diagramas para representar los requisitos del software, las funciones y el comportamiento.
+A la hora de definir qué es un modelo de análisis, se podría decir que es la primera representación técnica de un sistema. Utiliza una mezcla de formatos en texto y diagramas para representar los requisitos del software, las funciones y el comportamiento.
 
 En general, las empresas realizan análisis de datos para ganar un mayor conocimiento del entorno y de las necesidades del cliente de cara al producto que se está vendiendo. Por ejemplo, son clave para averiguar qué es lo que quiere el cliente, los riesgos que pueden llegar a afectar a la empresa o para recopilar información sustancial a la hora de emprender.
 
