@@ -13,4 +13,7 @@ print(archivo)
 wineqt = pd.read_csv("WineQT.csv") #Para leerlo desde un archivo
 wineqt_link = pd.read_csv(r"https://github.com/rnoguer22/Dataset_Fase_2/blob/main/WineQT.csv") #Para leerlo desde una URL
 
+#Para escrbir en un archivo csv usamos el método pd.to_csv:
+archivo.to_csv("WineQT.csv", mode="a") #Ponemos el mode a para que añada al csv y no reemplace los datos que hay ya escritos
+
 
