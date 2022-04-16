@@ -21,3 +21,21 @@ df = df.sort_index()
 print (df)
 #De esta manera podemos observar que para los valores en los que el pH es el mismo, se hace la media de los puestos que ocupan
 #Como el caso de 2.88, que ocupan el tercer y cuarto puesto, por lo tanto la media es 3.5 que es el valor que aparece en el indice
+
+
+
+"Tipos de datos y valores perdidos"
+
+#Vamos a reemplazar los valores perdidos (NaN), ya que no conviene eliminarlos al perderse muchos datos del dataset
+
+df = pd.read_csv("WineQT.csv")
+
+#Funcion que devuelve el promedio redondeado de una columna dek dataset
+def promedio(string):
+    return round(df["{}".format(string)].mean())
+
+lista_df = list(df)
+
+#Con este bucle sustituiriamos cada valor perdido por la media de la columna en la que se encuentra dicho valor
+for i in lista_df:
+    df["{}".format(i)].replace(df.nan, promedio(i))
