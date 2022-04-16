@@ -37,5 +37,9 @@ def promedio(string):
 lista_df = list(df)
 
 #Con este bucle sustituiriamos cada valor perdido por la media de la columna en la que se encuentra dicho valor
-for i in lista_df:
-    df["{}".format(i)].replace(df.nan, promedio(i))
+#Sin embargo al no haber ningun valor perdido da error
+try:
+    for i in lista_df:
+        df["{}".format(i)].replace(df.nan, promedio(i))
+except:
+    raise AttributeError("No hay ningun valor perdido en el dataframe")
