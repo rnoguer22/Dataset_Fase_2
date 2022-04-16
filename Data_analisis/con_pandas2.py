@@ -27,5 +27,25 @@ print(columna_elegida)
 columnas_elegidas = wine[["chlorides", "density", "pH"]]
 print(columnas_elegidas)
 
+#Selección de una fila
+fila_elegida = wine.iloc[6]
+print(fila_elegida)
+
+#Seleccion de varias filas
+filas_elegidas = wine.iloc[[6, 13]]
+print(filas_elegidas)
+
+#Seleccionar filas y columnas
+subtabla1 = wine.ix[[6, 13], ["chlorides", "density", "pH"]]
+print(subtabla1)
+
+#Seleccionar todas las filas y alguna columna
+subtabla2 = wine.loc[:, ["chlorides", "density", "pH"]]
+print(subtabla2)
+
+
+
+
+
 
 
