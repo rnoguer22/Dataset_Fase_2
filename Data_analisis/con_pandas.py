@@ -30,7 +30,7 @@ print (df)
 
 df = pd.read_csv("WineQT.csv")
 
-#Funcion que devuelve el promedio redondeado de una columna dek dataset
+#Funcion que devuelve el promedio redondeado de una columna del dataset
 def promedio(string):
     return round(df["{}".format(string)].mean())
 
@@ -42,4 +42,20 @@ try:
     for i in lista_df:
         df["{}".format(i)].replace(df.nan, promedio(i))
 except:
-    raise AttributeError("No hay ningun valor perdido en el dataframe")
+    print ("No hay ningun valor perdido en el dataframe")
+    pass
+
+
+
+"Renombrar y combinar"
+
+df = pd.read_csv("WineQT.csv")
+
+#Renombramos alguno de los nombres de las columnas del dataframe 
+df.rename({"pH": "PH", "residual sugar": "sugar"}, axis=1, inplace=True)
+
+concat1 = df.head(3)
+concat2 = df.tail(3)
+#Concatenamos las 3 primeras y ultimas filas del dataframe, una encima de la otra
+concatenacion = pd.concat([concat1, concat2], axis=0)
+print (concatenacion)
