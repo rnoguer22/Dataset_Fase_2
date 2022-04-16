@@ -2,7 +2,7 @@ import pandas as pd
 
 
 
-"Agrupacion y clasificacion"
+print("\nAgrupacion y clasificacion")
 
 df = pd.read_csv("WineQT.csv")
 
@@ -24,7 +24,7 @@ print (df)
 
 
 
-"Tipos de datos y valores perdidos"
+print("\nTipos de datos y valores perdidos")
 
 #Vamos a reemplazar los valores perdidos (NaN), ya que no conviene eliminarlos al perderse muchos datos del dataset
 
@@ -47,7 +47,7 @@ except:
 
 
 
-"Renombrar y combinar"
+print("\nRenombrar y combinar")
 
 df = pd.read_csv("WineQT.csv")
 
