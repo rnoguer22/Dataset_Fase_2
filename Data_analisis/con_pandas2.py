@@ -44,6 +44,12 @@ subtabla2 = wine.loc[:, ["chlorides", "density", "pH"]]
 print(subtabla2)
 
 
+#Resumen de funciones y mapas
+wine = pd.read_csv("WineQT.csv")
+columna_elegida = wine["density"]
+serie = columna_elegida.map("La densidad de este vino es {}".format)
+print(serie)
+
 
 
 
